@@ -1,7 +1,3 @@
-### Default .gitattributes for My Projects ###
-### Compiled by Michelle Schnee (@tachicola) ###
-
-
 # Auto detect text files and perform LF normalization
 
 * text=auto
@@ -30,8 +26,10 @@
 *.ztl filter=lfs diff=lfs merge=lfs -text
 
 
-## Images ##
+## 2D Assets ##
 
+*.ai filter=lfs diff=lfs merge=lfs -text
+*.ait filter=lfs diff=lfs merge=lfs -text
 *.ase filter=lfs diff=lfs merge=lfs -text
 *.aseprite filter=lfs diff=lfs merge=lfs -text
 *.bmp filter=lfs diff=lfs merge=lfs -text
@@ -46,6 +44,9 @@
 *.pict filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.psd filter=lfs diff=lfs merge=lfs -text
+*.sbs filter=lfs diff=lfs merge=lfs -text
+*.sbsar filter=lfs diff=lfs merge=lfs -text
+*.spp filter=lfs diff=lfs merge=lfs -text
 *.svg filter=lfs diff=lfs merge=lfs -text
 *.tga filter=lfs diff=lfs merge=lfs -text
 *.tif filter=lfs diff=lfs merge=lfs -text
@@ -70,6 +71,7 @@
 
 ## Videos ##
 
+*.aep filter=lfs diff=lfs merge=lfs -text
 *.avi filter=lfs diff=lfs merge=lfs -text
 *.fcpx filter=lfs diff=lfs merge=lfs -text
 *.mkv filter=lfs diff=lfs merge=lfs -text
@@ -81,6 +83,7 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mpeg filter=lfs diff=lfs merge=lfs -text
 *.mpg filter=lfs diff=lfs merge=lfs -text
+*.prproj filter=lfs diff=lfs merge=lfs -text
 *.webm filter=lfs diff=lfs merge=lfs -text
 
 
@@ -88,6 +91,11 @@
 
 *.doc filter=lfs diff=lfs merge=lfs -text
 *.docx filter=lfs diff=lfs merge=lfs -text
+*.icap filter=lfs diff=lfs merge=lfs -text
+*.icma filter=lfs diff=lfs merge=lfs -text
+*.icml filter=lfs diff=lfs merge=lfs -text
+*.icmt filter=lfs diff=lfs merge=lfs -text
+*.indd filter=lfs diff=lfs merge=lfs -text
 *.key filter=lfs diff=lfs merge=lfs -text
 *.numbers filter=lfs diff=lfs merge=lfs -text
 *.pages filter=lfs diff=lfs merge=lfs -text
