@@ -1,4 +1,4 @@
-/* TACHICOM Main CSS */
+/* Studio Schnee Main CSS */
 /* Michelle Schnee */
 
 body
@@ -9,9 +9,7 @@ body
 main
 {
     color: #ffffff;
-    font-family: 'Source Code Pro', monospace;
-    text-transform: uppercase;
-    margin: 35vh 0vw;
+    margin: 12vh 0vw;
 }
 
 h1
@@ -26,4 +24,9 @@ p
     font-size: 2vw;
     text-align: center;
     margin: 0;
+}
+
+img
+{
+    margin-left: 10vw;
 }
