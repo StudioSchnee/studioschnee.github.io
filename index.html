@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<!-- SCHNEE・STUDIO Index -->
+<!DOCTYPE HTML
+    PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 
 <head>
     <meta charset="utf-8">
-
-    <title>SCHNEE・STUDIO</title>
-
-    <meta name="description" content="Independent development studio based in the United States.">
-
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+    <title>シュニー・スタジオ ｜「SCHNEE・STUDIO」</title>
+    <meta name="keywords"
+        content="Schnee, Schnee Studio, games, video games, retro, retro games, retro video games, development, game development, retro development, retro game development, game dev, retro dev">
+    <meta name="description"
+        content="Independent development studio specializing in retro console development and reverse engineering.">
     <meta name="author" content="Michelle Schnee">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -19,14 +20,182 @@
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <script src="js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="js/jquery1.7.2.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <main>
-        <p><img src="media/logo.png" alt="SCHNEE・STUDIO Logo" width="500px" height="500px" /></p>
-        <script src="js/main.js"></script>
-    </main>
+    <header id="header" role="banner">
+        <div class="bg">
+            <div class="inner">
+                <h1>
+                    シュニー・スタジオ ｜「SCHNEE・STUDIO」
+                </h1>
+            </div>
+        </div>
+        <div class="inner">
+            <h2>
+                <a href="index.html"><img src="media/logo.svg" width="300" height="" alt="Logo"></a>
+            </h2>
+        </div>
+    </header>
+
+    <nav id="mainNav">
+        <div class="inner">
+            <a class="menu" id="menu"><span>MENU</span></a>
+            <div class="panel">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS BLOG</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="technology.html">TECHNOLOGY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mainImg">
+        <img src="media/banner.png" alt="Banner">
+    </div>
+
+    <div id="wrapper">
+        <div id="content">
+            <section>
+                <article class="content">
+                    <header>
+                        <h2 class="title first">
+                            WELCOME TO シュニー・スタジオ ｜「SCHNEE・STUDIO」
+                        </h2>
+                    </header>
+                    <div class="post">
+                        <p>
+                            <i>(It's pronounced "Schnee Dot Studio")</i>
+                        </p>
+                        <p>
+                            We are an independent development studio
+                            specializing in retro console development and
+                            reverse engineering. Our goal is to bring relevance
+                            to our favorite systems of generations past and to
+                            reintroduce current players to games on a widely
+                            accessible platform: PC.
+                        </p>
+                        <p>
+                            To this end, our focus is currently on reverse
+                            engineering game binaries on systems such as the
+                            Sony PlayStation and Nintendo GameCube. In doing so,
+                            we can provide players with the means to play
+                            classics never-before-seen on PC (granted that you
+                            have the prerequisite data files from your own copy
+                            of said game...). We do not provide ANY copyrighted
+                            content in our reverse-engineered releases.
+                        </p>
+                        <p>
+                            To stay in the loop, be sure to check out the <a
+                                href="news.html">news blog</a>, and follow our
+                            work on <a
+                                href="https://twitter.com/SchneeDotStudio"
+                                target="_blank">Twitter</a>
+                            and <a href="https://github.com/SchneeDotStudio"
+                                target="_blank">GitHub</a>.<br><br>
+                            Thanks for checking us out!
+                        </p>
+                    </div>
+                </article>
+                <!-- <article class="content">
+                    <header>
+                        <h2 class="title first">
+                            TITLE GOES HERE
+                            <time class="dateLabel" datetime="XXXX-XX-XX XX:XX">
+                                <a href="#">
+                                    XXXX.XX.XX
+                                </a>
+                            </time>
+                        </h2>
+                    </header>
+                    <div class="post">
+                        <h3>
+                            SECTION TITLE GOES HERE
+                        </h3>
+                        <h4>
+                            SUBSECTION TITLE GOES HERE
+                        </h4>
+                        <p>
+                            CONTENT GOES HERE
+                        </p>
+                        <ol>
+                            <li>
+                                LIST GOES HERE
+                            </li>
+                            <li>
+                                LIST GOES HERE
+                            </li>
+                        </ol>
+                        <ul>
+                            <li>
+                                LIST GOES HERE
+                            </li>
+                            <li>
+                                LIST GOES HERE
+                            </li>
+                        </ul>
+                        <img src="media/banner.png" alt="Test image">
+                        <blockquote>
+                            DEEP QUOTE GOES HERE
+                        </blockquote>
+                        <table>
+                            <tr>
+                                <th>HEADING GOES HERE</th>
+                                <th>HEADING GOES HERE</th>
+                            </tr>
+                            <tr>
+                                <td>CONTENT GOES HERE</td>
+                                <td>CONTENT GOES HERE</td>
+                            </tr>
+                        </table>
+                    </div>
+                </article> -->
+            </section>
+        </div>
+
+        <aside id="sidebar">
+            <section class="widget">
+                <h3><span>MENU</span></h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS BLOG</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="technology.html">TECHNOLOGY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <footer id="footer">
+        <div class="inner">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="news.html">NEWS BLOG</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="technology.html">TECHNOLOGY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="https://twitter.com/SchneeDotStudio"
+                        target="_blank">TWITTER</a></li>
+                <li><a href="https://github.com/SchneeDotStudio"
+                        target="_blank">GITHUB</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <p id="copyright">&copy; 2021 MICHELLE & SAMANTHA SCHNEE ｜
+        シュニー・スタジオ ｜「SCHNEE・STUDIO」</p>
+
 </body>
 
 </html>

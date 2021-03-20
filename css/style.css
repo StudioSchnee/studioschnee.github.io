@@ -1,0 +1,520 @@
+@charset "utf-8";
+
+/* =Reset default browser CSS.
+Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0;font-family: inherit;font-size: 100%;font-style: inherit;font-weight: inherit;margin: 0;outline: 0;padding: 0;vertical-align: baseline;}
+:focus {outline: 0;}
+
+ol, ul {list-style: none;}
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {font-weight: normal;text-align: left;}
+blockquote:before, blockquote:after,q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+a img {border: 0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+
+
+body{
+font:80%/1.5 "Lucida Sans Unicode", "Lucida Grande", Arial, "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック",sans-serif;
+color:#d1cdd7;
+-webkit-text-size-adjust: none;
+background:#181a1b;
+}
+
+
+/* Link Setting */
+a{
+margin:0;
+padding:0;
+text-decoration:none;
+outline:0;
+vertical-align:baseline;
+background:transparent;
+font-size:100%;
+color:#9d9488;
+}
+
+a:hover, a:active{
+-webkit-transition:opacity 1s;-moz-transition:opacity 1s;-o-transition:opacity 1s;
+outline: none;
+color:#a8a094;
+}
+
+
+/**** Clearfix ****/
+nav .panel:after, nav#mainNav:after, .newsTitle:after, .bg:after,.post:after{content:""; display: table;clear: both;}
+nav .panel,nav#mainNav,.newsTitle,.bg, .post{zoom: 1;}
+
+
+/* Layout */
+#wrapper, .inner{
+margin:0 auto;
+width:960px;
+}
+
+#header{
+overflow:hidden;
+}
+
+#content{
+float:left;
+width:710px;
+padding:30px 0;
+}
+
+#sidebar{
+float:right;
+width:225px;
+padding:30px 0;
+}
+
+#footer{
+clear:both;
+padding-top:20px;
+background:#222526;
+} 
+
+
+/* Header */
+#header .bg{background:#2b2f31;}
+
+
+/* Site Description & Address */
+#header h1,#header p{
+float:left;
+padding:3px 0;
+color: #e8e6e3;
+font-size:80%;
+font-weight:normal;
+}
+
+/* Logo (Site Title) */
+#header h2{
+clear:both;
+float:left;
+padding:30px 0;
+color: #515151;
+font-size:160%;
+font-weight:bold;
+}
+
+/* Home Main Image */
+#mainImg{
+clear:both;
+margin-top:25px;
+line-height:0;
+text-align:center;
+z-index:0;
+position:relative;
+}
+
+.post{
+margin:0 0 20px 0;
+padding:10px 10px 5px;
+border:1px solid #3a3f42;
+background: #222526;
+}
+
+
+/* Typography */
+h2.title{
+clear:both;
+margin:30px 0 0;
+padding:7px 10px;
+font-size:110%;
+border:1px solid #3a3f42;
+border-bottom:0;
+background: #2b2f31;
+}
+
+h2.first{margin-top:0;}
+
+time.dateLabel{
+padding:2px 0px;
+float: right;
+font:italic 1em "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.post p{padding-bottom:14px;}
+
+.post ul{margin: 0 0 10px 30px;}
+
+.post ul li{list-style-type: disc;}
+
+.post ol{margin: 0 0 10px 30px;}
+
+.post ol li{list-style:decimal;}
+
+.post h3{
+margin:10px 0;
+padding-bottom:2px;
+font-size:130%;
+font-weight:normal;
+border-bottom:2px solid #515151;
+}
+
+.post h4{
+margin:10px 0;
+font-size:120%;
+font-weight:normal;
+border-bottom:1px solid #515151;
+}
+
+.post blockquote {
+clear:both;
+padding:10px 0 10px 15px;
+margin:10px 0 25px 30px;
+border-left:5px solid #515151;
+}
+ 
+.post blockquote p{padding:5px 0;}
+
+.post table{
+border: 1px #515151 solid;
+border-collapse: collapse;
+border-spacing: 0;
+margin:10px 0 20px;
+}
+
+.post table th{
+padding:7px 10px 7px 5px;
+border: #515151 solid;
+border-width: 0 0 1px 1px;
+font-weight:bold;
+background:#2b2f31;
+}
+
+.post table td{
+padding:7px 5px;
+border: 1px #515151 solid;
+border-width: 0 0 1px 1px;
+}
+
+.post img{max-width:100%;height:auto;}
+
+img.aligncenter {
+display: block;
+margin:5px auto;
+}
+
+img.alignright, img.alignleft{
+padding:4px;
+margin:0 0 2px 7px;
+display:inline;
+}
+
+img.alignleft{margin: 0 7px 2px 0;}
+
+.alignright{float:right;}
+.alignleft{float: left;}
+
+
+
+/* Sidebar Widget */
+section.widget{
+margin: 0 0 20px;
+border:1px solid #3a3f42;
+}
+
+section.widget h3{
+clear:both;
+padding:10px 10px 10px;
+font-size:100%;
+font-weight:normal;
+color: #c8c3bc;
+background: #2b2f31;
+border-bottom:1px solid #3e4446;
+}
+
+section.widget ul{
+padding: 10px 0;
+background:#222526;
+}
+
+section.widget a{
+display:block;
+padding:3px 0 3px 13px;
+text-decoration:underline;
+}
+
+section.widget a:hover{
+text-decoration:none;
+background-position: 3px 50%;
+}
+
+
+/* Footer */
+#footer ul{
+font-size:12px;
+padding:10px 0 30px 0;
+}
+
+#footer ul li{
+display:inline-block;
+vertical-align:text-top;
+text-align:left;
+padding:5px 0;
+margin-right:30px;
+}
+
+#footer ul li	a{
+display:block;
+padding:0 0 0 12px;
+overflow:hidden;
+}
+
+#footer ul li	a:hover{text-decoration:underline;}
+
+#footer ul li li{
+display:block;
+padding:0;
+margin:0 0 0 10px;
+background-position:0 5px;
+}
+
+
+*:first-child+html #footer ul li{display:inline;}
+*:first-child+html #footer ul ul,*:first-child+html #footer ul li li a,*:first-child+html #footer ul li li{display:none;}
+
+#copyright{
+clear:both;
+padding:10px;
+text-align:center;
+font-size:75%;
+color:#aca59a;
+background:#222526;
+}
+
+
+/* Main Menu for PC */
+@media only screen and (min-width: 1025px){
+nav div.panel{
+display:block !important;
+float:left;
+background:#2b2f31;
+}
+
+a#menu{display:none;}		
+	
+nav#mainNav{
+clear:both;
+position:relative;
+z-index:200;
+}
+
+nav#mainNav ul li{
+float: left;
+position: relative;
+border-right:1px dotted #3e4446;
+}
+
+nav#mainNav ul li:first-child{border-left:1px dotted #3e4446;}
+
+nav#mainNav ul li a{
+display: block;
+text-align: center;
+_float:left;
+color:#c8c3bc;
+height:34px;
+line-height:34px;
+padding:12px 40px 5px;
+}
+
+nav#mainNav ul li a span,nav#mainNav ul li a strong{
+display:block;
+font-size:90%;
+line-height:1.4;
+}
+
+nav#mainNav ul li a span{
+font-size:70%;
+color:#42b27e;
+}
+
+nav#mainNav ul li.current-menu-item a, nav#mainNav ul li a:hover, nav#mainNav ul li a:active, nav#mainNav ul li.current-menu-parent a{
+background:#222526;
+}
+
+nav#mainNav ul ul{width:160px;}
+
+nav#mainNav ul li ul{display: none;}
+
+nav#mainNav ul li:hover ul{
+display: block;
+position: absolute;
+top:50px;
+left:-2px;
+z-index:500;
+}
+
+nav#mainNav ul li li{
+padding:0 0 0 10px;
+margin:0;
+float: none;
+height:40px;
+line-height:40px;
+width:160px;
+background:#1c1e1f;
+border:0;
+border-bottom:1px dotted #3e4446;
+}
+
+nav#mainNav ul li li:first-child{border-left:0;}
+
+nav#mainNav ul li li a{
+width:100%;
+height:40px;
+padding:0;
+line-height:40px;
+font-size:95%;
+text-align:left;
+}
+
+nav#mainNav ul li li a span{padding:0 10px;}
+
+nav#mainNav ul li li a:hover,nav#mainNav ul li li.current-menu-item a{color:#42b27e;}
+
+nav#mainNav ul li:hover ul li:last-child{border:0;}
+}
+
+
+/* Main Menu for iPad or Smaller */
+@media only screen and (max-width:1024px){
+	nav#mainNav{
+	clear:both;
+	width:93.8%;
+	margin:10px auto;
+	background:#2b2f31;
+	border-top:1px dotted #3e4446;
+	border-bottom:1px dotted #3e4446;
+	}
+	
+	nav#mainNav a.menu{
+	width:100%;
+	display:block;
+	height:37px;
+	line-height:37px;
+	font-weight: bold;
+	text-align:left;
+	color:#e8e6e3;
+	}
+	
+	nav#mainNav a#menu span{padding-left:10px;}
+	
+	nav#mainNav a#menu:hover{cursor:pointer;}
+	
+	nav .panel{
+	display: none;
+	width:100%;
+	position: relative;
+	right: 0;
+	top:0;
+	z-index: 1;
+	}
+
+	nav#mainNav ul{margin:0;padding:0;}
+
+	nav#mainNav ul li{
+	float: none;
+	clear:both;
+	width:100%;
+	height:auto;
+	line-height:1.2;
+	}
+
+	nav#mainNav ul li:first-child{border-top:1px solid #3c4143;}
+	nav#mainNav ul li li:first-child{border-top:0;}
+
+	nav#mainNav ul li a,nav#mainNav ul li.current-menu-item li a{
+	display: block;
+	padding:15px 10px;
+	text-align:left;
+	border-bottom:1px dashed #3e4446;
+	background:#222526;
+	}
+	
+	nav#mainNav ul li:last-child a{border:0;}
+	nav#mainNav ul li li:last-child a{border:0;}
+	nav#mainNav ul li li:last-child a{border-bottom:1px dashed #3e4446;}
+
+ 	nav#mainNav ul li a span{display:none;}
+ 
+	nav#mainNav ul li.current-menu-item a,nav#mainNav ul li a:hover,nav#mainNav ul li.current-menu-item a,nav#mainNav ul li a:active, nav#mainNav ul li li.current-menu-item a, nav#mainNav ul li.current-menu-item li a:hover, nav#mainNav ul li.current-menu-item li a:active{
+	background:#181a1b;
+	}
+
+	nav#mainNav ul li li{
+	float:left;
+	border:0;
+	}
+
+
+		
+	nav div.panel{float:none;}
+	
+	#mainImg{margin-bottom:20px;}
+}
+
+
+/* 1-Column Display for 959px or Less */
+@media only screen and (max-width: 959px){
+  #wrapper, #header, .inner{width:100%;}
+
+	#header h1, #header p{padding:5px 10px;}
+	#header h2{padding:20px 10px 0;}
+	#header ul{padding:20px 10px 10px;}
+
+
+	nav#mainNav ul, .thumbWrap{margin:0 auto;}
+	nav#mainNav ul ul{padding:0;}
+
+	nav div.panel{float:none;}
+	
+	#mainImg img{width:98%;height:auto;}
+
+	#content, #sidebar{
+	clear:both;
+	width:95%;
+	float:none;
+	margin:0 auto;
+	padding:10px 0;
+	}
+	
+	#banners{width:100%;margin:0 auto;text-align:center;}
+	#banners p{display:inline;margin:0 10px;}
+  #banners p img{width:100%;height:auto;}
+	
+	section.widget_search{text-align:center;}
+
+	#footer{margin:0;border:0;text-align:center;}
+	
+	#footer ul{	text-align:center;	}
+	#footer ul li{margin-right:20px;}
+	
+	.thumbWrap{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	width:100%;
+	margin:0 auto;
+	padding-top:20px;
+	overflow:auto;
+  border:1px solid #3a3f42;
+	}
+	.thumbWrap ul.thumb li{width:30%; float:left;margin:0 1% 0 2%;}
+  .thumbWrap img{width:100%;height:auto;}
+}
+
+
+/* Fine Adjustment of Header for 644px or Less */
+@media only screen and (max-width: 644px){
+	#header{text-align:center;}
+	#header h2,#header ul{float:none;}
+	#headerInfo{width:250px;margin:0 auto;}
+	img.alignright, img.alignleft{display: block;	margin:5px auto;}
+	.alignright,.alignleft{float:none;}
+	#footer ul{text-align:left;padding:15px;}
+	#footer ul ul{padding:0;}
+}
