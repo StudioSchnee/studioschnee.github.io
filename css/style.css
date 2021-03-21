@@ -14,8 +14,14 @@ blockquote, q {quotes: "" "";}
 a img {border: 0;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
 
+html{
+min-height: 100%;
+}
 
 body{
+min-height: 100%;
+display: flex;
+flex-direction: column;
 font:80%/1.5 "Lucida Sans Unicode", "Lucida Grande", Arial, "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック",sans-serif;
 color:#d1cdd7;
 -webkit-text-size-adjust: none;
@@ -58,6 +64,7 @@ overflow:hidden;
 }
 
 #content{
+flex: 1 0 auto;
 float:left;
 width:710px;
 padding:30px 0;
@@ -70,6 +77,7 @@ padding:30px 0;
 }
 
 #footer{
+flex-shrink: 0;
 clear:both;
 padding-top:20px;
 background:#222526;
@@ -289,94 +297,94 @@ background:#222526;
 
 /* Main Menu for PC */
 @media only screen and (min-width: 1025px){
-nav div.panel{
-display:block !important;
-float:left;
-background:#2b2f31;
-}
+	nav div.panel{
+	display:block !important;
+	float:left;
+	background:#2b2f31;
+	}
 
-a#menu{display:none;}		
-	
-nav#mainNav{
-clear:both;
-position:relative;
-z-index:200;
-}
+	a#menu{display:none;}		
+		
+	nav#mainNav{
+	clear:both;
+	position:relative;
+	z-index:200;
+	}
 
-nav#mainNav ul li{
-float: left;
-position: relative;
-border-right:1px dotted #3e4446;
-}
+	nav#mainNav ul li{
+	float: left;
+	position: relative;
+	border-right:1px dotted #3e4446;
+	}
 
-nav#mainNav ul li:first-child{border-left:1px dotted #3e4446;}
+	nav#mainNav ul li:first-child{border-left:1px dotted #3e4446;}
 
-nav#mainNav ul li a{
-display: block;
-text-align: center;
-_float:left;
-color:#c8c3bc;
-height:34px;
-line-height:34px;
-padding:10px 40px;
-}
+	nav#mainNav ul li a{
+	display: block;
+	text-align: center;
+	_float:left;
+	color:#c8c3bc;
+	height:34px;
+	line-height:34px;
+	padding:10px 40px;
+	}
 
-nav#mainNav ul li a span,nav#mainNav ul li a strong{
-display:block;
-font-size:90%;
-line-height:1.4;
-}
+	nav#mainNav ul li a span,nav#mainNav ul li a strong{
+	display:block;
+	font-size:90%;
+	line-height:1.4;
+	}
 
-nav#mainNav ul li a span{
-font-size:70%;
-color:#42b27e;
-}
+	nav#mainNav ul li a span{
+	font-size:70%;
+	color:#42b27e;
+	}
 
-nav#mainNav ul li.current-menu-item a, nav#mainNav ul li a:hover, nav#mainNav ul li a:active, nav#mainNav ul li.current-menu-parent a{
-background:#222526;
-}
+	nav#mainNav ul li.current-menu-item a, nav#mainNav ul li a:hover, nav#mainNav ul li a:active, nav#mainNav ul li.current-menu-parent a{
+	background:#222526;
+	}
 
-nav#mainNav ul ul{width:160px;}
+	nav#mainNav ul ul{width:160px;}
 
-nav#mainNav ul li ul{display: none;}
+	nav#mainNav ul li ul{display: none;}
 
-nav#mainNav ul li:hover ul{
-display: block;
-position: absolute;
-top:50px;
-left:-2px;
-z-index:500;
-}
+	nav#mainNav ul li:hover ul{
+	display: block;
+	position: absolute;
+	top:50px;
+	left:-2px;
+	z-index:500;
+	}
 
-nav#mainNav ul li li{
-padding:0 0 0 10px;
-margin:0;
-float: none;
-height:40px;
-line-height:40px;
-width:160px;
-background:#1c1e1f;
-border:0;
-border-bottom:1px dotted #3e4446;
-}
+	nav#mainNav ul li li{
+	padding:0 0 0 10px;
+	margin:0;
+	float: none;
+	height:40px;
+	line-height:40px;
+	width:160px;
+	background:#1c1e1f;
+	border:0;
+	border-bottom:1px dotted #3e4446;
+	}
 
-nav#mainNav ul li li:first-child{border-left:0;}
+	nav#mainNav ul li li:first-child{border-left:0;}
 
-nav#mainNav ul li li a{
-width:100%;
-height:40px;
-padding:0;
-line-height:40px;
-font-size:95%;
-text-align:left;
-}
+	nav#mainNav ul li li a{
+	width:100%;
+	height:40px;
+	padding:0;
+	line-height:40px;
+	font-size:95%;
+	text-align:left;
+	}
 
-nav#mainNav ul li li a span{padding:0 10px;}
+	nav#mainNav ul li li a span{padding:0 10px;}
 
-nav#mainNav ul li li a:hover,nav#mainNav ul li li.current-menu-item a{color:#42b27e;}
+	nav#mainNav ul li li a:hover,nav#mainNav ul li li.current-menu-item a{color:#42b27e;}
 
-nav#mainNav ul li:hover ul li:last-child{border:0;}
-}
+	nav#mainNav ul li:hover ul li:last-child{border:0;}
+	}
 
 
 /* Main Menu for iPad or Smaller */
